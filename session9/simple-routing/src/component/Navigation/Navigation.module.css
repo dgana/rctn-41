@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(43, 49, 52);
+  color: white;
+}
+
+.menus {
+  list-style: none;
+}
+
+.menus li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.menus li a {
+  color: white;
+  text-decoration: none;
+}

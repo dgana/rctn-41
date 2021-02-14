@@ -1,0 +1,36 @@
+.Image {
+  display: flex;
+  width: 40vmin;
+  height: 40vmin;
+  justify-content: center;
+}
+
+.Menu {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: sandybrown;
+  text-align: center;
+  position: fixed;
+  color: white;
+  font-size: 16pt;
+}
+
+.About {
+  border: solid black 2px;
+  margin-left: 10px;
+  width: 800px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 50;
+  padding: 0;
+  text-align: center;
+}
+a {
+  text-decoration:none;
+  color: white;
+}

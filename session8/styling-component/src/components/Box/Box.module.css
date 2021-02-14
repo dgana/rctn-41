@@ -1,0 +1,16 @@
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.red_box {
+  background: salmon;
+}
+
+.blue_box {
+  background: blue;
+}
+
+.black_box {
+  background: black;
+}

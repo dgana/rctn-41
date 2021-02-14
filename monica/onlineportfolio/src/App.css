@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+}
+
+*{font-family:'Oswald', sans-serif;}d
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0 0 0 0;
+  margin-bottom: 25%;
+  margin-left: 4%;
+}
+
+.social-links i {
+  color: darkgrey;
+  font-size: 50px;
+  padding: 8px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
+
+.home-font h1{
+  font-family:'Oswald', sans-serif;
+}
+.home-font h2{
+  font-family:'Oswald', sans-serif;
+}
+.home-font h3{
+  font-family:'Oswald', sans-serif;
+}
+
+.awards-list {
+  margin: 25% 0 25% 5%;
+}
+
+.awards-list h1 {
+
+  font-family:'Oswald', sans-serif;
+}
+
+.awards-list li { 
+  margin-left: 75px;
+}
+
+.nav-color{
+  position: relative;
+  margin: 0;
+  background-color: salmon;
+  margin-top: 50%;
+  text-align: center;
+
+}
+
+.exp h1{
+  font-family: 'Oswald', sans-serif;
+}
+
+.exp {
+  margin-top: 25%;
+  margin-bottom: 25%;
+  margin-left: 5%;
+}
+
+.rows{
+  display: flex;
+}
+
+.cols h4{
+  display: inline;
+  font-family: 'Oswald', sans-serif;
+}
+
+.cols span{
+  float:right;
+  margin-right: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+}
+
+.cols h6{
+  font-family: 'Oswald', sans-serif;
+}
+
+.cols p {
+  margin-bottom: 50px;
+}
+
+.side-font {
+  color: white;
+  font-size: 50px;
+}
+
+.side-image {
+  height: auto;
+  width: auto;
+  max-height: 165px;
+  max-width: 250px;
+}
+
+.home-font {
+  text-align: left;
+  margin-top: 25%;
+  margin-left: 5%;
+  font-family:'Oswald', sans-serif;
+  margin-bottom: 25%;
+}
+
+.banner-text {
+  margin-top: 25%;
+  margin-left: 5%;
+}
+
+.banner-text h1, h6, p{
+  font-family:'Oswald', sans-serif;
+}
+
+/*NEW*/
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(214, 84, 9);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav li {
+  padding: 6px 8px 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  display: block;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 50%;
+}
+
+.sidenav a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav img {
+  height: auto;
+  width: auto;
+  max-height: 125px;
+  max-width: 125px;
+}
+
+.skills-dec {
+  margin: 25% 0 25% 5%;
+  font-family:'Oswald', sans-serif;
+}
+
+.skills-dec h1, h5{
+  font-family:'Oswald', sans-serif;
+}
+
+.column {
+  margin-left:50%;
+}
+
+.interest{
+  margin: 25% 0 25% 5%;
+}
+
+.interest h1, p{
+
+  font-family:'Oswald', sans-serif;
+}
+
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

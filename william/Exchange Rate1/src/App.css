@@ -1,0 +1,11 @@
+.counter {
+  border: solid black 2px;
+  background: orange;
+}
+
+.tabel {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22pt;
+  color: white;
+}

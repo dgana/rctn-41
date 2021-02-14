@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bc5b3c;
+  height: 100vh;
+  position: fixed;
+  width: 20%;
+}
+
+.avatar {
+  object-fit: contain;
+  width: 80%;
+}
+
+.menu {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0px;
+  margin-top: 24px;
+}
+
+.menu li {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  padding-top: 2rem;
+  padding-left: calc(20% + 2rem);
+}
+
+.section {
+  margin-bottom: 20rem;
+}

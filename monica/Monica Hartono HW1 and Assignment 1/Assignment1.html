@@ -1,0 +1,105 @@
+<!-- 
+    Monica Hartono
+    Assignment 1
+    24 July 2020
+    Making a simple calculator with HTML and JavaScript
+-->
+<html>
+    <head>
+        <script>
+            function insert(num){
+                document.form.textview.value += num
+            }
+            function equal(){
+                document.form.textview.value = eval(document.form.textview.value)
+            }
+            function c(){
+                document.form.textview.value = "";
+            }
+        </script>
+        <style>
+            .button-green{
+                width: 100;
+                height: 30;
+                font-size: 12;
+                margin: 2;
+                cursor: pointer;
+                background-color: green;
+            }
+            .button-grey{
+                width: 100;
+                height: 30;
+                font-size: 12;
+                margin: 2;
+                cursor: pointer;
+                background-color: grey;
+            }
+            .button-red{
+                width: 100;
+                height: 30;
+                font-size: 12;
+                margin: 2;
+                cursor: pointer;
+                background-color: red;
+            }
+            .equalbutton{
+                width: 100;
+                height: 40;
+                font-size: 20;
+                margin: 2;
+                background-color: blue;
+            }
+            .textview{
+                width: 425;
+                margin: 5;
+                font-size: 25;
+                padding: 5;
+            }
+            .main{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%)
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "main">
+            <form name = "form">
+                <input class = "textview" name = "textview">
+            </form>
+            <table>
+                <div class = "container">
+                    <tr>
+                        <td><button class = "button-green" onclick="insert(1)">1</td>
+                        <td><button class = "button-green" onclick="insert(2)">2</td>
+                        <td><button class = "button-green" onclick="insert(3)">3</td>
+                        <td><button class = "button-grey" onclick="insert('*')">*</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "button-green" onclick="insert(4)">4</td>
+                        <td><button class = "button-green" onclick="insert(5)">5</td>
+                        <td><button class = "button-green" onclick="insert(6)">6</td>
+                        <td><button class = "button-grey" onclick="insert('/')">/</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "button-green" onclick="insert(7)">7</td>
+                        <td><button class = "button-green" onclick="insert(8)">8</td>
+                        <td><button class = "button-green" onclick="insert(9)">9</td>
+                        <td><button class = "button-grey" onclick="insert('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "button-green" onclick="insert(0)">0</td>
+                        <td><button class = "button-green" onclick="insert('.')">.</td>
+                        <td><button class = "button-red"  onclick="c()">C</td>
+                        <td><button class = "button-grey" onclick="insert('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td colspan=100><button class = "equalbutton" style = "width: 424" onclick="equal()">=</td>
+                    </tr>
+                </div>  
+            </table>
+            
+        </div>
+    </body>
+</html>

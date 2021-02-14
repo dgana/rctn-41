@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        margin: auto;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin-bottom: 6px;
+      }
+
+      .display {
+        width: 100%;
+        text-align: right;
+        padding: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin-right: 4px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .bg-green {
+        background-color: green;
+      }
+
+      .bg-gray {
+        background-color: gray;
+      }
+
+      .bg-lightskyblue {
+        background-color: lightskyblue;
+      }
+
+      .bg-salmon {
+        background-color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-container">
+        <input id="input" readonly class="display" type="text" />
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green">1</button>
+        <button class="btn bg-green">2</button>
+        <button class="btn bg-green">3</button>
+        <button class="btn bg-gray">*</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green">4</button>
+        <button class="btn bg-green">5</button>
+        <button class="btn bg-green">6</button>
+        <button class="btn bg-gray">/</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green">7</button>
+        <button class="btn bg-green">8</button>
+        <button class="btn bg-green">9</button>
+        <button class="btn bg-gray">-</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green">0</button>
+        <button class="btn bg-green">.</button>
+        <button class="btn bg-salmon">C</button>
+        <button class="btn bg-gray">+</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-lightskyblue">=</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      let button = $('.btn').click(function () {
+        let display = $('#input')[0]
+        console.log(display)
+        console.log(this.innerHTML)
+        display.value += this.innerHTML
+      })
+    </script>
+  </body>
+</html>

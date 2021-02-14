@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  background-color: #006666;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(0, 204, 153);
+  height: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar_link:hover {
+  font-weight: bold;
+}
+
+.navbar__link--active {
+  border-bottom: 3px solid white;
+  transition: border-bottom .5s ease-in-out;
+}

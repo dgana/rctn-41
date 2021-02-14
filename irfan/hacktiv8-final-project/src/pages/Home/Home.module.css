@@ -1,0 +1,24 @@
+.header h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.wrapper {
+  justify-content: space-evenly;
+  text-align: center;
+  
+}
+
+.wrapper h2 {
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+}
+
+.wrapper h3 {
+  font-size: 28px;
+  color: rgb(0, 204, 153);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

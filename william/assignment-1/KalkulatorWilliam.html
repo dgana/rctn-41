@@ -1,0 +1,145 @@
+<html> 
+<head> 
+	<script> 
+		//function untuk memunculakn angka yang ingin dihitung 
+		function angka(val) 
+		{ 
+			document.getElementById("result").value+=val 
+		} 
+		
+		//function untuk menghitung
+		function hitung() 
+		{ 
+			let x = document.getElementById("result").value 
+			let y = eval(x) 
+			document.getElementById("result").value = y 
+		} 
+		
+        //function untuk menghapus hasil
+		function clr() 
+		{ 
+			document.getElementById("result").value = "" 
+		} 
+	</script>
+	<style> 
+		.title{ 
+		margin-bottom: 10px; 
+        margin-left: auto;
+        margin-right: auto;
+		text-align:center; 
+		width: 100%; 
+		color:rgb(0, 119, 6); 
+		} 
+
+		.tabel{
+        width: 100%;
+        text-align: right;
+        font-size: 14px;
+        }
+
+        .button {
+        width: 100%;
+        background-color: mediumseagreen;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 4px;
+        cursor: pointer;
+        }
+
+        .clear {
+        width:100%;
+        background-color: salmon;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 4px;
+        cursor: pointer;
+        }
+
+        .operasi {
+        background-color: rgb(102, 102, 102);
+        width:100%;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 4px;
+        cursor: pointer;
+        }
+
+        .samadengan {
+        width:100%;
+        background-color: turquoise;
+        border: none;
+        color: white;
+        padding: 15px 153px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
+		input[type="text"] 
+		{ 
+		background-color:white; 
+		border: solid black 2px; 
+        width:100%;
+        font-size: 32px;
+		} 
+
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+	</style> 
+</head>
+<body> 
+	<div class = title ><h1>Calculator William</h1></div> 
+	<div class = tabel>
+        <table class="center"> 
+		<tr> 
+			<td colspan="4"><input readonly input type="text" class="tabel" placeholder="0" id="result"/></td>  
+		</tr> 
+		<tr> 
+            <td><input type="button" class="button" value="1" onclick="angka('1')"/> </td> 
+			<td><input type="button" class="button" value="2" onclick="angka('2')"/> </td> 
+			<td><input type="button" class="button" value="3" onclick="angka('3')"/> </td> 
+			<td><input type="button" class="operasi" value="*" onclick="angka('*')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" class="button" value="4" onclick="angka('4')"/> </td> 
+			<td><input type="button" class="button" value="5" onclick="angka('5')"/> </td> 
+			<td><input type="button" class="button" value="6" onclick="angka('6')"/> </td> 
+			<td><input type="button" class="operasi" value="/" onclick="angka('/')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" class="button" value="7" onclick="angka('7')"/> </td> 
+			<td><input type="button" class="button" value="8" onclick="angka('8')"/> </td> 
+			<td><input type="button" class="button" value="9" onclick="angka('9')"/> </td> 
+			<td><input type="button" class="operasi" value="-" onclick="angka('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" class="button" value="0" onclick="angka('0')"/> </td> 
+			<td><input type="button" class="button" value="." onclick="angka('.')"/> </td> 
+            <td><input type="button" class="clear" value="c" onclick="clr()"/> </td>
+			<td><input type="button" class="operasi" value="+" onclick="angka('+')"/> </td> 
+        </tr>
+        <tr> 
+            <td colspan="4"><input type="button" class="samadengan" value="=" onclick="hitung()"></td>
+        </tr>
+	</table></div>
+</body> 
+</html> 

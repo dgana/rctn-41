@@ -1,0 +1,50 @@
+.container {
+  width: auto;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter button {
+  margin: 2rem;
+}
+
+.counter ul {
+  margin: auto;
+  padding-top: 12px;
+  margin-bottom: 2rem;
+}
+
+.counter ul li img {
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table tr td,
+table tr th {
+  border: 1px solid black;
+  padding: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 2rem;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}

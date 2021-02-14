@@ -1,0 +1,45 @@
+.container {
+    width: 500px;
+    margin: auto;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 6px;
+  }
+
+  #display {
+    width: 100%;
+    text-align: right;
+    padding: 4px;
+    font-size: 30px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-right: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .bg-green {
+    background-color: green;
+  }
+
+  .bg-gray {
+    background-color: gray;
+  }
+
+  .bg-lightskyblue {
+    background-color: lightskyblue;
+  }
+
+  .bg-salmon {
+    background-color: salmon;
+  }

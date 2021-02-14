@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        margin: auto;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin-bottom: 6px;
+      }
+
+      .display {
+        width: 100%;
+        text-align: right;
+        padding: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin-right: 4px;
+        border: none;
+        cursor: pointer;
+      }
+      .tombolAngka {
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin-right: 4px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .bg-green {
+        background-color: green;
+      }
+
+      .bg-gray {
+        background-color: gray;
+      }
+
+      .bg-lightskyblue {
+        background-color: lightskyblue;
+      }
+
+      .bg-salmon {
+        background-color: salmon;
+      }
+    </style>
+    <script type="text/javascript" src="kalkulator.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-container">
+        <input id="hasil" readonly class="display" type="text" value='0'/>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green" onclick="display('1')">1</button>
+        <button class="btn bg-green" onclick="display('2')">2</button>
+        <button class="btn bg-green" onclick="display('3')">3</button>
+        <button class="btn bg-gray" onclick="operand('*')">*</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green" onclick="display('4')">4</button>
+        <button class="btn bg-green" onclick="display('5')">5</button>
+        <button class="btn bg-green" onclick="display('6')">6</button>
+        <button class="btn bg-gray" onclick="operand('/')">/</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green" onclick="display('7')">7</button>
+        <button class="btn bg-green" onclick="display('8')">8</button>
+        <button class="btn bg-green" onclick="display('9')">9</button>
+        <button class="btn bg-gray" onclick="operand('-')">-</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-green" onclick="display('0')">0</button>
+        <button class="btn bg-green" onclick="koma()">.</button>
+        <button class="btn bg-salmon" onclick="reset()">C</button>
+        <button class="btn bg-gray" onclick="operand('+')">+</button>
+      </div>
+      <div class="flex-container">
+        <button class="btn bg-lightskyblue" onclick="perhitungan()">=</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </body>
+</html>
